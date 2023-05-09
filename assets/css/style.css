@@ -71,24 +71,29 @@ You have been warned! :)
 /* R E U S E */
 
 .text--primary {
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
 }
 
 .bg--primary {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary) !important;
 }
 
 .text--secondary {
-  color: var(--color-secondary);
+  color: var(--color-secondary) !important;
 }
 
 .bg--secondary {
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary) !important;
 }
 
 
+.text-link{
+  text-decoration: underline !important;
+}
 
 /* Custom Code */
+
+
 
 .navbar-brand img {
   width: 220px;
@@ -101,6 +106,14 @@ You have been warned! :)
 
 .new-img{
   width: 90%;
+}
+
+
+@media screen and (max-width: 576px) {
+  .mx-sm-auto{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 /* CUstom ends here */
