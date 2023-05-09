@@ -195,9 +195,11 @@
     
 
 }(jQuery));
+
 ! function(window, document, $) {
 
     "use strict";
+    
 
     var Typed = function(el, options) {
         var self = this;
@@ -672,6 +674,22 @@
         // callback for reset
         resetCallback: function() {}
     };
+
+    
+    /* ------------------ TYPED SCRIPT ------------------ */
+
+    if ($(".typed-text").length > 0) {
+        $(".typed-text").each(function () {
+          var $string = $(this).data("typed-string") ? $(this).data("typed-string").split(",") : [];
+  
+          $(this).typed({
+            strings: $string,
+            typeSpeed: 0,
+            loop: true,
+          });
+        });
+      }
+  
 
 
 }(window, document, window.jQuery);
